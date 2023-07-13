@@ -141,17 +141,16 @@ button{
 
 .about{
    background-color: #A5978E;
-   padding: 50px 0 60px;
+   padding: 50px 0;
    color: #fafafa;
 }
 
 .about__inner{
    display: flex;
-   align-items: center;
 }
 
 .about__content{
-   width: 370px;
+   min-width: 370px;
 }
 
 .about__title{
@@ -184,6 +183,16 @@ button{
    height: 30px;
 }
 
+.about__list::after{
+   content: '';
+   position: absolute;
+   left: 22px;
+   bottom: 13px;
+   background-color: #7B6152;
+   width: 500%;
+   height: 1px;
+}
+
 .about__item-img{
    margin-bottom: 10px;
 }
@@ -191,9 +200,6 @@ button{
 .about__item-text{
    font-size: 11px;
 }
-
-
-
 
 
 
@@ -250,6 +256,12 @@ button{
    .top__text{
      margin-bottom: 30px;
    }
+   .about__content{
+      min-width: 300px;
+   }
+   .about__list{
+      padding-left: 20px;
+   }
 }
 
 @media (max-width:900px){
@@ -270,7 +282,6 @@ button{
    body{
       font-size: 10px;
    }
-   
    .container{
       max-width: 640px;
    }
@@ -289,14 +300,39 @@ button{
    }
    .top__title{
       font-size: 20px;
-      margin-bottom: 20px;
    }
    .top__text{
-      font-size: 10px;
-      margin-bottom: 20px;
+    margin-bottom: 20px;
    }
    .top__img{
       left: 175px;
+   }
+   .about__content{
+      min-width: 200px;
+   }
+   .title{
+      font-size: 15px;
+      margin-bottom: 20px;
+   }
+   .about__list{
+      margin-left: 23px;
+      margin-bottom: 33px;
+      gap: 0 10px;
+   }
+   .about__item-text{
+      font-size: 6px;
+   }
+   .about__item-img{
+      margin-bottom: 5px;
+   }
+   .about__item-img--1{
+      width: 120px;
+   }
+   .about__item-img--2{
+      width: 190px;
+   }
+   .about__item-img--3{
+      width: 120px;
    }
 }
 
