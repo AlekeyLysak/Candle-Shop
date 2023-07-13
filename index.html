@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
    <header class="header">
       <div class="container header__inner">
@@ -51,79 +52,108 @@
       </div>
    </header>
    <main>
-   <main class="main">
-      <section class="top">
-         <div class="container top__inner">
-            <div class="top__content">
-               <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
-               <p class="top__text">Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною продукцією зі 100% натуральної соєвого воску.</p>
-               <button class="buy__btn">Купити</button>
+      <main class="main">
+         <section class="top">
+            <div class="container top__inner">
+               <div class="top__content">
+                  <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
+                  <p class="top__text">Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною
+                     продукцією зі 100% натуральної соєвого воску.</p>
+                  <button class="buy__btn">Купити</button>
+               </div>
+               <picture class="top__img">
+                  <source srcset="images/top-s.png" media="(max-width:360px)">
+                  <source srcset="images/top-m.png" media="(max-width:480px)">
+                  <img class="top__img-l" src="images/top-l.png" alt="">
+               </picture>
             </div>
-            <picture class="top__img">
-               <source srcset="images/top-s.png" media="(max-width:360px)">
-               <source srcset="images/top-m.png" media="(max-width:480px)">
-               <img class="top__img-l" src="images/top-l.png" alt="">
-            </picture>
+         </section>
+         <section class="about">
+            <div class="container about__inner">
+               <div class="about__content">
+                  <h2 class="about__title">Про нас</h2>
+                  <p class="about__text">Богдан творець бренду який завжди зацікавлений у виготовленні різноманітних
+                     речей вдома. Він регулярно експериментував з різними матеріалами та інструментами, спробувавши свої
+                     сили у багатьох галузях, включаючи виготовлення свічок.
+                  </p>
+                  <p class="about__text">Ссоєвий віск виготовляють із соєвих бобів, що зрощуються в Данії, і цей вид
+                     воску є екологічно чистим та безпечним для здоров'я.
+                  </p>
+               </div>
+               <ul class="about__list">
+                  <li class="about__item">
+                     <img src="images/about-1.jpg" alt="" class="about__item-img">
+                     <p class="about__item-text">Насолоджуйтеся моментом</p>
+                  </li>
+                  <li class="about__item">
+                     <img src="images/about-2.png" alt="" class="about__item-img">
+                     <p class="about__item-text">Створіть улюблену атмосферу</p>
+                  </li>
+                  <li class="about__item">
+                     <img src="images/about-3.jpg" alt="" class="about__item-img">
+                     <p class="about__item-text">Виготовлені з любов'ю</p>
+                  </li>
+               </ul>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container footer__inner">
+            <a class="logo" href="#">
+               <img class="logo__img" src="images/logo-footer.png" alt="">
+            </a>
+            <nav class="menu footer__menu">
+               <ul class="menu__list footer__menu-list">
+                  <li class="menu__list-item">
+                     <a href="#" class="menu__list-link">Про нас</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#" class="menu__list-link">Каталог</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#" class="menu__list-link">Команда</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#" class="menu__list-link">Відгуки</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#" class="menu__list-link">Курси</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#" class="menu__list-link">Контакти</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="footer__contacts">
+               <a href="tel:+4565789876" class="footer__phone">+45 65 78 98 76</a>
+               <a href="mailto:candelsCandels@gmail.com" class="email">candelsCandels@gmail.com</a>
+               <ul class="footer__social">
+                  <li class="footer__social-item">
+                     <a href="#" class="footer__social-link">
+                        <img src="images/facebook.svg" alt="" class="footer__social-img">
+                     </a>
+                  </li>
+                  <li class="footer__social-item">
+                     <a href="#" class="footer__social-link">
+                        <img src="images/instagram.svg" alt="" class="footer__social-img">
+                     </a>
+                  </li>
+                  <li class="footer__social-item">
+                     <a href="#" class="footer__social-link">
+                        <img src="images/link.svg" alt="" class="footer__social-img">
+                     </a>
+                  </li>
+                  <li class="footer__social-item">
+                     <a href="#" class="footer__social-link">
+                        <img src="images/youtube.svg" alt="" class="footer__social-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
          </div>
-      </section>
-   </main>
-   <footer class="footer">
-      <div class="container footer__inner">
-         <a class="logo" href="#">
-            <img class="logo__img" src="images/logo-footer.png" alt="">
-         </a>
-         <nav class="menu footer__menu">
-            <ul class="menu__list footer__menu-list">
-               <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Про нас</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Каталог</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Команда</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Відгуки</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Курси</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Контакти</a>
-               </li>
-            </ul>
-         </nav>
-         <div class="footer__contacts">
-            <a href="tel:+4565789876" class="footer__phone">+45 65 78 98 76</a>
-            <a href="mailto:candelsCandels@gmail.com" class="email">candelsCandels@gmail.com</a>
-            <ul class="footer__social">
-               <li class="footer__social-item">
-                  <a href="#" class="footer__social-link">
-                     <img src="images/facebook.svg" alt="" class="footer__social-img">
-                  </a>
-               </li>
-               <li class="footer__social-item">
-                  <a href="#" class="footer__social-link">
-                     <img src="images/instagram.svg" alt="" class="footer__social-img">
-                  </a>
-               </li>
-               <li class="footer__social-item">
-                  <a href="#" class="footer__social-link">
-                     <img src="images/link.svg" alt="" class="footer__social-img">
-                  </a>
-               </li>
-               <li class="footer__social-item">
-                  <a href="#" class="footer__social-link">
-                     <img src="images/youtube.svg" alt="" class="footer__social-img">
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </footer>
+      </footer>
 
-   <script src="js/main.js"></script>
+      <script src="js/main.js"></script>
 </body>
 
 </html>
