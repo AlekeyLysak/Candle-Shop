@@ -321,3 +321,25 @@ button{
       padding: 30px 0 50px;
    }
 }
+
+@media (max-width:360px){
+   .top__img-l{
+      width: 155px;
+   }
+   .top__img{
+      left: auto;
+      right: -29px;
+      top: -15px;
+   }
+   .top__content{
+      width: 203px;
+      padding: 20px 0 0;
+   }
+   .top__title{
+      font-size: 18px;
+   }
+   .top__text{
+      font-size: 10px;
+      width: 197px;
+   }
+}
