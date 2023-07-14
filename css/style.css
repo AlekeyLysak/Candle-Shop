@@ -428,6 +428,7 @@ button{
       gap: 0 5px;
       align-items: flex-end;
       margin-bottom: 0;
+      margin-left: 15px;
    }
    .about__inner{
       align-items: flex-end;
