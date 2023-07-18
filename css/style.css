@@ -312,8 +312,8 @@ button{
    color: white;
    font-size: 11px;
    font-family: 'Yeseva One', cursive;
+   margin-bottom: 20px;
 }
-
 
 .courses__title{
    padding: 15px;
@@ -780,6 +780,7 @@ button{
    }
   .products__item-title{
     font-size: 10px;
+    margin-top: 20px;
   }
   .products__item-text{
     margin-bottom: 16px;
@@ -791,4 +792,5 @@ button{
    .courses__item img{
       width: 255px;
    }
+
 }
