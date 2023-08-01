@@ -9,23 +9,16 @@ menuBtn.addEventListener('click', () => {
 const swiperOne = new Swiper('.feedback__slider', {
    loop: true,
    pagination: {
-<<<<<<< HEAD
-      el: '.swiper-pagination',
-   },
-});
-=======
      el: '.swiper-pagination',
    },
 });
  
->>>>>>> 02402f0c4e5c25e063b4e9cf23a78358c888ddcc
 
 const swiperTwo = new Swiper('.certificates__slider', {
    loop: true,
    slidesPerView: 3,
    spaceBetween: 20,
    pagination: {
-<<<<<<< HEAD
       el: '.swiper-pagination',
    },
    breakpoints: {
@@ -40,8 +33,3 @@ const swiperTwo = new Swiper('.certificates__slider', {
       },
    },
 });
-=======
-     el: '.swiper-pagination',
-   },
- });
->>>>>>> 02402f0c4e5c25e063b4e9cf23a78358c888ddcc
