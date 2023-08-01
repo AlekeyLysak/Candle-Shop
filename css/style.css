@@ -475,21 +475,24 @@ button{
 }
 
 
+/*-------------- CERTIFICATES -------------*/
 
+.certificates__slider{
+  width: 1140px;
+  overflow: hidden;
+}
 
+.certificates__desrc{
+  margin-right: 20px;
+}
 
+.certificates__content{
+ padding-bottom: 114px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.certificates__content .swiper-pagination{
+  bottom: 60px;
+}
 
 
 /*-------------- FOOTER -------------*/
@@ -520,6 +523,16 @@ button{
 .footer__social{
    display: flex;
    gap: 15px;
+}
+
+
+@media (max-width:1050px){
+  .steps__list{
+     gap: 37px 35px;
+    }
+    .steps__item{
+     gap: 0 30px;
+    }
 }
 
 
@@ -560,7 +573,56 @@ button{
   .section__text{
     font-size: 10px;
   }
+  .team__content{
+    gap: 30px 20px;
+  }
+  .team{
+    padding: 50px 0;
+  }
+  .team__item-box {
+    right: 4px;
+  }
+  .feedback-inner {
+    grid-template-columns: 260px auto;
+  }
+  .feedback__slider{
+    width: 690px;
+  }
+  .certificates__content img{
+    width: 280px;
+  }
+  .certificates__slider{
+    width: 870px;
+  }
+  .certificates__content .swiper-pagination{
+      text-align: center;
+  }
+  .certificates__desrc{
+   margin-right: 26px;
+ }
 }
+
+@media (max-width:980px){
+   .steps__title{
+      font-size: 30px;
+   }
+  .steps__list{
+   gap: 35px 35px;
+  }
+  .steps__item{
+   gap: 0 20px;
+  }
+  .steps__item-img{
+   width: 85px;
+   object-fit: cover;
+  }
+  .steps__item-text{
+   font-size: 8px;
+  }
+  .steps__item::before{
+   font-size: 20px;
+  }
+ }
 
 @media (max-width:900px){
    .footer__inner{
@@ -581,90 +643,158 @@ button{
   .products__content{
     gap: 30px 16px;
   }
+  .title{
+    font-size: 35px;
+  }
 }
 
 @media (max-width:768px){
-   body{
-      font-size: 10px;
-   }
-   .container{
-      max-width: 640px;
-   }
-   .phone{
-      font-size: 10px;
-   }
-   .phone::before {
-      width: 14px;
-      height: 14px;
-      left: -15px;
-      top: -3px;
-      background-size: cover;
-   }
-   .top__content{
-      width: 230px;
-      
-   }
-   .top__title{
-      font-size: 20px;
-   }
-   .top__text{
-    margin-bottom: 20px;
-   }
-   .top__img{
-      left: 175px;
-   }
-   .about__content{
-      min-width: 200px;
-      margin-top: 0;
-   }
-   .title{
-      font-size: 15px;
-      margin-bottom: 20px;
-   }
-   .about__list{
-      margin-left: 23px;
-      margin-bottom: 33px;
-      gap: 0 10px;
-      align-items: flex-end;
-   }
-   .about__item-text{
-      font-size: 6px;
-   }
-   .about__item-img{
-      margin-bottom: 5px;
-   }
-   .about__item-img--1{
-      width: 120px;
-   }
-   .about__item-img--2{
-      width: 190px;
-   }
-   .about__item-img--3{
-      width: 120px;
-   }
-   .products__item{
-    width: 200px;
-   }
-   .products__item-img{
-    width: 200px;
-    margin-bottom: 6px;
-   }
-   .products__item-text{
-    font-size: 8px;
-    margin-bottom: 18px;
-   }
-   .products__item-price{
-    font-size: 12px;
-    margin-bottom: 7px;
-   }
-  .products__item-title{
-    font-size: 12px;
-    margin-bottom: 9px;
+  body{
+     font-size: 10px;
   }
-  .button{
-    font-size: 12px;
-    padding: 10px 26px;
-   }
+  .container{
+     max-width: 640px;
+  }
+  .phone{
+     font-size: 10px;
+  }
+  .phone::before {
+     width: 14px;
+     height: 14px;
+     left: -15px;
+     top: -3px;
+     background-size: cover;
+  }
+  .top__content{
+     width: 230px;
+     
+  }
+  .top__title{
+     font-size: 20px;
+  }
+  .top__text{
+   margin-bottom: 20px;
+  }
+  .top__img{
+     left: 175px;
+  }
+  .about__content{
+     min-width: 200px;
+     margin-top: 0;
+  }
+  .title{
+     font-size: 15px;
+     margin-bottom: 20px;
+  }
+  .about__list{
+     margin-left: 23px;
+     margin-bottom: 33px;
+     gap: 0 10px;
+     align-items: flex-end;
+  }
+  .about__item-text{
+     font-size: 6px;
+  }
+  .about__item-img{
+     margin-bottom: 5px;
+  }
+  .about__item-img--1{
+     width: 120px;
+  }
+  .about__item-img--2{
+     width: 190px;
+  }
+  .about__item-img--3{
+     width: 120px;
+  }
+  .products__item{
+      width: 200px;
+  }
+  .products__item-img{
+      width: 200px;
+      margin-bottom: 6px;
+  }
+  .products__item-text{
+      font-size: 8px;
+      margin-bottom: 18px;
+  }
+  .products__item-price{
+      font-size: 12px;
+      margin-bottom: 7px;
+  }
+ .products__item-title{
+      font-size: 12px;
+      margin-bottom: 9px;
+ }
+ .products__content {
+   gap:30px;
+}
+ .button{
+   font-size: 12px;
+   padding: 10px 26px;
+  }
+  .courses__title{
+     padding: 6px;
+     left: -1px;
+     top: 55%;
+  }
+  .courses__time{
+     padding: 5px;
+     left: -1px;
+     top: 40%;
+  }
+  .courses__price{
+     padding: 12px 5px;
+     right: 0px;
+     bottom: -2px;
+  }
+  .team__img{
+     width: 140px;
+  }
+  .team__item-box{
+     padding: 9px 6px 10px;
+     width: 102px;
+    bottom: 9px;
+    right: -15px;
+  }
+  .team__item-name{
+     font-size: 8px;
+  }
+  .team__item-descr{
+     font-size: 7px;
+  }
+  .feedback__item-video{
+    width: 200px;
+  }
+  .feedback__item-img{
+    width: 200px;
+  }
+  .feedback__slider{
+    width: 440px;
+  }
+  .feedback__item-content{
+    padding-bottom: 30px;
+  }
+  .swiper-pagination-bullet{
+    width: 28px;
+  }
+  .feedback__content{
+    padding-bottom: 70px;
+  }
+  .button {
+    font-size: 8px;
+    padding: 15px 20px;
+    margin-bottom: -10px;
+  }
+  .certificates__content img {
+    width: 200px;
+  }
+  /* .certificates__slider {
+    width: 615px;
+  } */
+  .certificates__desrc{
+   margin-right: 11px;
+ }
 }
 
 
@@ -703,12 +833,15 @@ button{
     margin-bottom: 30px;
     text-align: center;
    }
+   .team__item-box{
+    right: auto;
+    left: 80px;
+  }
 }
 
-@media (max-width:480px){
+@media (max-width:500px){
    .footer__inner{
       flex-direction: column;
-      position: relative;
    }
    .footer__menu{
       padding: 50px 0;
@@ -717,10 +850,14 @@ button{
    .footer__menu-list{
       flex-direction: column;
    }
-   footer{
+   .footer{
       padding: 50px 0;
       font-size: 14px;
    }
+}
+
+
+@media (max-width:480px){
    .top__img-l{
       position: relative;
       width: 308px;
@@ -767,21 +904,71 @@ button{
       align-items: flex-end;
    }
    .about{
-    margin-bottom: 50px;
+     margin-bottom: 50px;
    }
    .section{
-    padding-bottom: 50px;
+     padding-bottom: 50px;
    }
    .section__content-descr{
-    padding-bottom: 62px;
+     padding-bottom: 62px;
    }
    .section__descr{
-    margin: 0 auto 30px;
-    width: 300px;
+     margin: 0 auto 30px;
+     width: 300px;
    }
+   .steps__list{
+     gap: 25px 40px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .team{
+    margin-bottom: 50px;
+  }
+  .certificates__content img{
+      width: 200px;
+  }
+  .certificates__slider{
+      width: 415px;
+     margin: 0 auto;
+  }
 }
 
-
+@media (max-width:404px){
+  .steps__list{
+     gap: 20px 25px;
+  }
+  .steps__item{
+     gap: 0 16px;
+  }
+  .steps__item-img{
+     width: 66px;
+     object-fit: cover;
+  }
+  .steps__item-text{
+     font-size: 6px;
+  }
+  .courses__content{
+     grid-template-columns: auto;
+  }
+  .team__content{
+     grid-template-columns: auto;
+  }
+  .team__img{
+     width: 204px;
+  }
+  .team__item-name{
+     font-size: 12px;
+  }
+  .team__item-descr{
+     font-size: 10px;
+  }
+  .team__item-box{
+     width: 151px;
+     left: 150px;
+     bottom: 15px;
+  }
+}
 
 @media (max-width:360px){
    .top__img-l{
@@ -826,33 +1013,61 @@ button{
       display: none;
    }
    .section__text {
-    font-size: 8px;
+      font-size: 8px;
   }
    .section__descr{
       margin: 0 auto 25px;
       width: 235px;
    }
    .products__item{
-    width: 150px;
+      width: 150px;
    }
    .products__content{
-    gap: 40px 7px;
+      gap: 40px 7px;
    }
    .products__item-img{
-    width: 140px;
+      width: 140px;
    }
    .button{
-    font-size: 8px;
-    padding: 8px 20px;
+      font-size: 8px;
+      padding: 8px 20px;
    }
    .products__item-price{
-    font-size: 10px;
-    margin-bottom: 5px;
+      font-size: 10px;
+       margin-bottom: 5px;
    }
   .products__item-title{
-    font-size: 10px;
+      font-size: 10px;
   }
   .products__item-text{
-    margin-bottom: 16px;
+      margin-bottom: 16px;
   }
+  .certificates__slider{
+      width: 200px;
+   }
+   .feedback__item{
+      grid-template-columns: auto;
+      text-align: center;
+   }
+   .feedback__slider{
+      width: 250px;
+      margin: 0 auto;
+   }
+   .feedback__item-img{
+      width: 250px;
+      margin: 0 auto 20px;
+   }
+   .feedback__item-video{
+      width: 250px;
+   }
+    .feedback__item-btn{
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      max-width: 100px;
+      padding: 20px 15px;
+    }
+    .feedback__item-text {
+      margin-bottom: 32px;
+    }  
 }
